@@ -2434,6 +2434,5 @@ int ipa_mhi_update_mstate(enum ipa_mhi_mstate mstate_info)
 }
 EXPORT_SYMBOL(ipa_mhi_update_mstate);
 
-
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("IPA MHI client driver");
