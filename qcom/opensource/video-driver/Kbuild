@@ -40,7 +40,7 @@ LINUXINCLUDE    += -include $(VIDEO_ROOT)/config/ravelin_video.h \
                    -I$(VIDEO_ROOT)/driver/platform/ravelin/inc
 endif
 
-ifeq ($(CONFIG_ARCH_BLAIR), y)
+ifneq (, $(filter y, $(CONFIG_ARCH_HOLI) $(CONFIG_ARCH_BLAIR)))
 include $(VIDEO_ROOT)/config/blair_video.conf
 LINUXINCLUDE    += -include $(VIDEO_ROOT)/config/blair_video.h \
                    -I$(VIDEO_ROOT)/driver/platform/blair/inc
