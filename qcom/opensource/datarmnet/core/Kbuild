@@ -1,3 +1,7 @@
+LINUXINCLUDE += -I$(srctree)/../sm6375-modules/qcom/opensource/dataipa/drivers/platform/msm/include
+LINUXINCLUDE += -I$(srctree)/../sm6375-modules/qcom/opensource/dataipa/drivers/platform/msm/include/linux
+LINUXINCLUDE += -I$(srctree)/../sm6375-modules/qcom/opensource/dataipa/drivers/platform/msm/include/uapi
+
 ifneq (, $(filter y, $(CONFIG_ARCH_PINEAPPLE) $(CONFIG_ARCH_HOLI) $(CONFIG_ARCH_BLAIR) $(CONFIG_ARCH_MONACO) $(CONFIG_ARCH_PITTI)))
 ccflags-y	+= -DCONFIG_RMNET_LA_PLATFORM
 endif
